@@ -11,6 +11,10 @@
 		00B4C0802A94A75A0094A71C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4C07F2A94A75A0094A71C /* ContentView.swift */; };
 		00B4C0822A94A75C0094A71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B4C0812A94A75C0094A71C /* Assets.xcassets */; };
 		00B4C0852A94A75C0094A71C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B4C0842A94A75C0094A71C /* Preview Assets.xcassets */; };
+		00B4C08C2A94A7BD0094A71C /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4C08B2A94A7BD0094A71C /* View+Extension.swift */; };
+		00B4C08E2A94A8140094A71C /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4C08D2A94A8140094A71C /* UIImage+Extension.swift */; };
+		00B4C0902A94A9DE0094A71C /* ScreenshotMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4C08F2A94A9DE0094A71C /* ScreenshotMaker.swift */; };
+		00B4C0922A94AAC90094A71C /* ScreenshotMakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4C0912A94AAC90094A71C /* ScreenshotMakerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		00B4C07F2A94A75A0094A71C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		00B4C0812A94A75C0094A71C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00B4C0842A94A75C0094A71C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00B4C08B2A94A7BD0094A71C /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		00B4C08D2A94A8140094A71C /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		00B4C08F2A94A9DE0094A71C /* ScreenshotMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotMaker.swift; sourceTree = "<group>"; };
+		00B4C0912A94AAC90094A71C /* ScreenshotMakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotMakerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				00B4C07D2A94A75A0094A71C /* SnapshotApp.swift */,
 				00B4C07F2A94A75A0094A71C /* ContentView.swift */,
+				00B4C08F2A94A9DE0094A71C /* ScreenshotMaker.swift */,
+				00B4C08B2A94A7BD0094A71C /* View+Extension.swift */,
+				00B4C0912A94AAC90094A71C /* ScreenshotMakerView.swift */,
+				00B4C08D2A94A8140094A71C /* UIImage+Extension.swift */,
 				00B4C0812A94A75C0094A71C /* Assets.xcassets */,
 				00B4C0832A94A75C0094A71C /* Preview Content */,
 			);
@@ -138,7 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				00B4C0802A94A75A0094A71C /* ContentView.swift in Sources */,
+				00B4C0902A94A9DE0094A71C /* ScreenshotMaker.swift in Sources */,
+				00B4C08C2A94A7BD0094A71C /* View+Extension.swift in Sources */,
+				00B4C0922A94AAC90094A71C /* ScreenshotMakerView.swift in Sources */,
 				00B4C07E2A94A75A0094A71C /* SnapshotApp.swift in Sources */,
+				00B4C08E2A94A8140094A71C /* UIImage+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,9 +280,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Snapshot/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -279,8 +296,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ril.Snapshot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kk.Snapshot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -292,9 +310,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Snapshot/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -307,8 +326,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ril.Snapshot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kk.Snapshot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -8,14 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var screenshotMaker: ScreenshotMaker?
+
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            
+            VStack {
+                Text("Top Bar")
+                Spacer()
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundColor(.accentColor)
+                Text("Hello, world!")
+                Text("Main View")
+                Spacer()
+            }
+            .padding()
+            Text("Bottom Bar")
+            Spacer()
+            Button {
+                if let screenshotMaker = screenshotMaker {
+                    screenshotMaker.screenshot()?.saveToDocuments()
+                }
+                else {
+                    snapshot().saveToDocuments()
+                }
+            } label: {
+                Text("Take Snapshot")
+              }
         }
-        .padding()
+        .screenshotView { screenshotMaker in
+            self.screenshotMaker = screenshotMaker
+        }
+        
     }
 }
 
